@@ -3,6 +3,13 @@
 * 'sset' file usualy used provides for register setting code from manufacturer of digital camera module.
 * So I made it to convert C or H file to use in embedded linux drivers.
 
+## Supported OS ##
+
+* Most of all,
+	- Windows 32/64 bit
+	- Linux 32/64 bit
+	- Mac OS X
+
 ## Example ##
 
 * sset here :
