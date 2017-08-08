@@ -266,7 +266,9 @@ int convertingwork()
             }
             else
             {
-                codehdr  = "static struct /*struct type here*/ ";
+                codehdr  = "static struct ";
+                codehdr += opt_structtype;
+                codehdr += " ";
                 codehdr += opt_symbol;
                 codehdr += "[] = \n";
                 codehdr += "{\n";
