@@ -174,13 +174,13 @@ void printhelp()
     printf( "\t-s(-S)=[symbol name] : Using symbol name\n" );
     printf( "\t                       If it ignored, randomly generates.\n" );
     printf( "\t-t(-T)=[structure name] : Using structure name\n" );
-    printf( "\t                          Default is a comment : /*struct name here*/\n" );
+    printf( "\t                          Default is a comment : /*struct type here*/\n" );
     printf( "\n" );
 }
 
 int convertingwork()
 {
-    ifstream sfile( opt_srcfile );
+    ifstream sfile( opt_srcfile.c_str() );
 
     if (  sfile.is_open() == true )
     {
@@ -230,7 +230,7 @@ int convertingwork()
 
         printf( "Total counts = %d\n", (int)ssets.size() );
 
-        ofstream dfile( opt_dstfile );
+        ofstream dfile( opt_dstfile.c_str() );
 
         if( dfile.is_open() == true )
         {
